@@ -69,16 +69,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Gt-Jea">
-                                <rect key="frame" x="167" y="87" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Gt-Jea">
+                                <rect key="frame" x="167" y="87" width="42" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-xe-Wow">
-                                <rect key="frame" x="170" y="138" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-xe-Wow">
+                                <rect key="frame" x="170" y="127" width="33" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="sDm-Z6-4wp" kind="unwind" unwindAction="unwind:" id="MXu-uD-MV1"/>
@@ -86,6 +84,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="170" id="946-vq-iTP"/>
+                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="trailing" secondItem="hqo-xe-Wow" secondAttribute="trailing" constant="172" id="DLu-pg-hcn"/>
+                            <constraint firstItem="QHC-Gt-Jea" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="167" id="FCZ-Ug-1kk"/>
+                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="trailing" secondItem="QHC-Gt-Jea" secondAttribute="trailing" constant="166" id="htL-ul-SPU"/>
+                            <constraint firstItem="QHC-Gt-Jea" firstAttribute="top" secondItem="9lX-v8-ZM2" secondAttribute="top" constant="67" id="o0K-Ut-YYD"/>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="top" secondItem="QHC-Gt-Jea" secondAttribute="bottom" constant="30" id="zbM-LL-f1g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9lX-v8-ZM2"/>
                     </view>
                     <connections>
