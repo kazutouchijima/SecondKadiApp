@@ -67,30 +67,36 @@
                 <viewController id="IyS-RS-vyB" customClass="NameViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLP-S2-IFa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Gt-Jea">
-                                <rect key="frame" x="167" y="87" width="42" height="10"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-xe-Wow">
-                                <rect key="frame" x="170" y="127" width="33" height="30"/>
+                                <rect key="frame" x="171" y="125" width="33" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="sDm-Z6-4wp" kind="unwind" unwindAction="unwind:" id="MXu-uD-MV1"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-np-8Gn">
+                                <rect key="frame" x="174" y="96" width="22" height="10"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Gt-Jea">
+                                <rect key="frame" x="177" y="89" width="21" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hqo-xe-Wow" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="170" id="946-vq-iTP"/>
-                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="trailing" secondItem="hqo-xe-Wow" secondAttribute="trailing" constant="172" id="DLu-pg-hcn"/>
-                            <constraint firstItem="QHC-Gt-Jea" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="167" id="FCZ-Ug-1kk"/>
-                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="trailing" secondItem="QHC-Gt-Jea" secondAttribute="trailing" constant="166" id="htL-ul-SPU"/>
-                            <constraint firstItem="QHC-Gt-Jea" firstAttribute="top" secondItem="9lX-v8-ZM2" secondAttribute="top" constant="67" id="o0K-Ut-YYD"/>
-                            <constraint firstItem="hqo-xe-Wow" firstAttribute="top" secondItem="QHC-Gt-Jea" secondAttribute="bottom" constant="30" id="zbM-LL-f1g"/>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="171" id="C4N-oo-jWb"/>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="top" secondItem="WJk-np-8Gn" secondAttribute="bottom" constant="19" id="CdP-Am-VYX"/>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="centerX" secondItem="kLP-S2-IFa" secondAttribute="centerX" id="Ol2-f8-vIS"/>
+                            <constraint firstItem="WJk-np-8Gn" firstAttribute="leading" secondItem="9lX-v8-ZM2" secondAttribute="leading" constant="174" id="RPz-Hs-FfE"/>
+                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="bottom" secondItem="hqo-xe-Wow" secondAttribute="bottom" constant="512" id="XEW-Qz-J4E"/>
+                            <constraint firstItem="QHC-Gt-Jea" firstAttribute="top" secondItem="9lX-v8-ZM2" secondAttribute="top" constant="69" id="Zra-sB-ibQ"/>
+                            <constraint firstItem="9lX-v8-ZM2" firstAttribute="trailing" secondItem="WJk-np-8Gn" secondAttribute="trailing" constant="179" id="fmj-tj-5z5"/>
+                            <constraint firstItem="hqo-xe-Wow" firstAttribute="centerX" secondItem="QHC-Gt-Jea" secondAttribute="centerX" id="qfD-aZ-Z1f"/>
+                            <constraint firstItem="WJk-np-8Gn" firstAttribute="top" secondItem="9lX-v8-ZM2" secondAttribute="top" constant="76" id="xk4-Rb-WgJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9lX-v8-ZM2"/>
                     </view>
@@ -101,7 +107,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAo-xc-nC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="sDm-Z6-4wp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="794" y="34"/>
+            <point key="canvasLocation" x="792.79999999999995" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
